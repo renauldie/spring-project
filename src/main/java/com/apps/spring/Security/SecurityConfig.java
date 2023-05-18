@@ -1,6 +1,6 @@
-package com.apps.spring.Configs;
+package com.apps.spring.Security;
 
-import jakarta.servlet.Filter;
+import com.apps.spring.Security.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

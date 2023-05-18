@@ -1,4 +1,4 @@
-package com.apps.spring.auth;
+package com.apps.spring.Models.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,4 +18,6 @@ public class RegisterRequest {
     private String username;
 
     private String password;
+
+    private String email;
 }

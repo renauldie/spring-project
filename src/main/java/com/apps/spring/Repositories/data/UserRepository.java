@@ -1,6 +1,6 @@
-package com.apps.spring.Repositories.Tables;
+package com.apps.spring.Repositories.data;
 
-import com.apps.spring.Models.user.User;
+import com.apps.spring.Models.data.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

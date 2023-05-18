@@ -1,6 +1,6 @@
 package com.apps.spring.Configs;
 
-import com.apps.spring.Repositories.Tables.UserRepository;
+import com.apps.spring.Repositories.data.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

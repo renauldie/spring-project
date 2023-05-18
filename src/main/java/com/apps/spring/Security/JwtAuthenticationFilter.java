@@ -1,5 +1,6 @@
-package com.apps.spring.Configs;
+package com.apps.spring.Security;
 
+import com.apps.spring.Services.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,4 +1,4 @@
-package com.apps.spring.Configs;
+package com.apps.spring.Services;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -32,15 +32,18 @@ public class JwtService {
         return generateToken(new HashMap<>(), userDetails);
     }
 
-    public String generateToken(Map<String, Object> extractClaims,
-                                UserDetails userDetails
+    public String generateToken(
+        Map<String, Object> extractClaims,
+        UserDetails userDetails
     ) { // generate token
+        Claims claims = Jwts.claims();
+
         return Jwts
                 .builder()
                 .setClaims(extractClaims)
                 .setSubject(userDetails.getUsername())
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 8))
+                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 8))
                 .signWith(getSignInKey(), SignatureAlgorithm.HS256)
                 .compact();
     }

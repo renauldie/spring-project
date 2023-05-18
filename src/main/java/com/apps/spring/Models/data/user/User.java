@@ -1,4 +1,4 @@
-package com.apps.spring.Models.user;
+package com.apps.spring.Models.data.user;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -41,9 +41,9 @@ public class User implements UserDetails {
 
 //    @Override
 //    public String getUsername() {
-//        return email;
+//        return username;
 //    }
-
+//
 //    @Override
 //    public String getPassword() {
 //        return password;

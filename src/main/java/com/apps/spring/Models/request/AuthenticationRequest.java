@@ -1,4 +1,4 @@
-package com.apps.spring.auth;
+package com.apps.spring.Models.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
